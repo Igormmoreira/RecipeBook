@@ -21,5 +21,7 @@ namespace RecipeBook.Data
         public DbSet<RecipeBook.Models.Ingredient> Ingredient { get; set; }
 
         public DbSet<RecipeBook.Models.RecipeIngredient> RecipeIngredient { get; set; }
+
+        public DbSet<RecipeBook.Models.Variety> Variety { get; set; }
     }
 }
