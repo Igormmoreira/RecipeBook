@@ -1,14 +1,11 @@
 ﻿@model IEnumerable<RecipeBook.Models.Variety>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista de variedades";
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -19,6 +16,14 @@
         </tr>
     </thead>
     <tbody>
+
+    <tr>
+        <td>
+            <a asp-action="Create" class="btn btn-light">Nova variedade de receita</a>
+
+        </td>
+    </tr>
+
 @foreach (var item in Model) {
         <tr>
             <td>
